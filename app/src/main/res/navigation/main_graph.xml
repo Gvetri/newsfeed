@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph.xml"
+    app:startDestination="@id/newsFeedFragment">
+
+    <fragment
+        android:id="@+id/newsFeedFragment"
+        android:name="dev.gvetri.newsfeed.NewsFeedFragment"
+        android:label="NewsFeedFragment" />
+
+    <navigation
+        android:id="@+id/player_graph"
+        app:startDestination="@+id/player_graph">
+        <include app:graph="@navigation/player_graph" />
+    </navigation>
+</navigation>
